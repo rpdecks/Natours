@@ -156,11 +156,7 @@
         font-weight: 100;
     }
 
-
-
-
-
-    //@include respond(tab-port) {
+    //@include respond(tab-port) { --> this code carries over from design we had before including the hover query below
     @media only screen and (max-width: 56.25em),
             only screen and (hover: none) {
 
