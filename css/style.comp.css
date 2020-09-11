@@ -5,12 +5,13 @@
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
 
-$breakpoint arguement choices:
+$breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
 - big-desktop
 
+For making adjustments to code based on media query results:
 ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
@@ -511,15 +512,15 @@ body {
   left: 0;
   top: -.4rem; }
   .form__radio-button::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     content: "";
     display: block;
     height: 1.3rem;
     width: 1.3rem;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #55c57a;
     opacity: 0;
     transition: opacity .2s; }
@@ -560,6 +561,11 @@ body {
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__left {
+        visibility: hidden;
+        display: none;
+        width: 0%; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
@@ -568,6 +574,9 @@ body {
   .popup__img {
     display: block;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__img {
+        display: inline; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -581,6 +590,10 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media only screen and (max-width: 75em) {
+      .popup__text {
+        -moz-column-count: 1;
+        column-count: 1; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
