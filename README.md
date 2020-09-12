@@ -1,4 +1,4 @@
-# This is a CSS/Sass/HTML project I did following a Udemy tutorial online.
+## This is a CSS/Sass/HTML project I did following a Udemy tutorial online.
 ![](Natours.gif)
 
 > Jonas Schmedtmann's  
@@ -10,7 +10,7 @@
 1. Presenting theory and subsequent practical application
 1. Wide exposure to CSS/SASS capabilities in modern browsers
 
-# Tech skills learned & included
+## Tech skills learned & included
 1. Deep understanding of how CSS works "under the hood"
 1. Traditional & Advanced CSS including:
 - keyframe animations
